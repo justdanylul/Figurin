@@ -1,6 +1,7 @@
 let mousePosX = 0, mousePosY =0;
 const cursorRound = document.querySelector('.cursor-round');
 const li_text = document.querySelectorAll('.li-text');
+const product = document.querySelectorAll('.product__item');
 
 window.addEventListener('scroll', () => {
     let newScroll = window.scrollY;
@@ -47,8 +48,8 @@ delayMouseFollow();
 li_text.forEach(text => {
     text.onmouseover = function(){
            cursorRound.style.opacity = "0.2";
-           cursorRound.style.width = "30px"
-           cursorRound.style.height = "30px"
+           cursorRound.style.width = "40px"
+           cursorRound.style.height = "40px"
     }
     text.onmouseout = function() {
         cursorRound.style.opacity = "1";
@@ -56,4 +57,18 @@ li_text.forEach(text => {
            cursorRound.style.height = "20px"
     }
 })
+
+product.forEach(text => {
+    text.onmouseover = function(){
+           cursorRound.style.opacity = "0.2";
+           cursorRound.style.width = "40px"
+           cursorRound.style.height = "40px"
+    }
+    text.onmouseout = function() {
+        cursorRound.style.opacity = "1";
+           cursorRound.style.width = "20px"
+           cursorRound.style.height = "20px"
+    }
+})
+
 
