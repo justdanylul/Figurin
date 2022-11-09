@@ -5,7 +5,7 @@ const product = document.querySelectorAll('.product__item');
 
 window.addEventListener('scroll', () => {
     let newScroll = window.scrollY;
-    console.log(newScroll);
+    // console.log(newScroll);
 
         [].forEach.call(
             

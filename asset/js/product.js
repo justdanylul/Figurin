@@ -15,17 +15,17 @@ img_list.forEach(e => {
     }
     if (a == 2) {
         e.addEventListener('click', () => {
-            image_slide.style.transform = `translateX(-487px)`;
+            image_slide.style.transform = `translateX(-100%)`;
         })
     }
     if (a == 3) {
         e.addEventListener('click', () => {
-            image_slide.style.transform = `translateX(-974px)`;
+            image_slide.style.transform = `translateX(-200%)`;
         })
     }
     if (a == 4) {
         e.addEventListener('click', () => {
-            image_slide.style.transform = `translateX(-1461px)`;
+            image_slide.style.transform = `translateX(-300%)`;
         })
     }
 })

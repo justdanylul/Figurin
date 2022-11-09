@@ -340,8 +340,9 @@ body {
     margin: 0;
     overflow: hidden;
     width: 100%;
-    display: flex;
-    justify-content: space-between;
+    display: grid;
+    /* justify-content: space-between; */
+    grid-template-columns: repeat(6, 1fr);
 }
 
 .footer__mid__img {
@@ -550,6 +551,14 @@ body {
     .navbar__top__item {
         width: 100%;
     }
+    .footer__mid {
+        grid-template-columns: repeat(3, 1fr);
+        gap: 0;
+    }
+    .colection {
+        grid-template-columns: repeat(1,1fr);
+        height: 500px;
+    }
 }
 
 @media screen and (max-width :550px) {
@@ -573,4 +582,9 @@ body {
     .filter__box span::after {
         height: 35px; width: 225px;
     }
+}
+
+.checked {
+    display: block;
+    animation: fadeUp 0.3s ease-out forwards;
 }
